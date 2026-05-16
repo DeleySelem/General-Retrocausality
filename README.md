@@ -83,10 +83,6 @@ The probability that the past record matches the future intention as a function 
 
 The following ASCII schematic illustrates the retrocausal coupling from a future intention to a past record:
 
-```
-
-```
-
 ## 6. Observable signature
 
 For small coupling ($\theta \ll 1$), $\cos^2\theta \approx 1 - \theta^2 > 0.5$. Therefore a statistically significant deviation from $50\%$ in a binary choice experiment (e.g., quantum random bit generation followed by human intention) is the hallmark of a genuine retrocausal effect. The predicted match rate is
