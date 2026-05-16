@@ -1,4 +1,3 @@
-
 # Retrocausality in time‑symmetric quantum mechanics
 
 A general mathematical formulation – post‑selection, conscious coupling, and the ABL rule.
@@ -8,7 +7,7 @@ A general mathematical formulation – post‑selection, conscious coupling, and
 For a system evolving from an initial state $|\psi(t_0)\rangle$ to a final (post‑selected) state $|\phi(t_f)\rangle$, the probability to find an intermediate state $|m\rangle$ at time $t$ is:
 
 $$
-P(m \mid \psi,\phi) \=\
+P(m \mid \psi,\phi) = 
 \frac{\bigl|\langle\phi(t_f)|U(t_f,t)|m\rangle\langle m|U(t,t_0)|\psi(t_0)\rangle\bigr|^2}
      {\sum_{m'}\bigl|\langle\phi(t_f)|U(t_f,t)|m'\rangle\langle m'|U(t,t_0)|\psi(t_0)\rangle\bigr|^2}
 $$
@@ -20,7 +19,7 @@ where $U(t_2,t_1)=e^{-iH(t_2-t_1)/\hbar}$ is the time evolution operator. This r
 Consider a two‑state physical record (e.g., a spin, a photon polarization) that stores a bit $x \in \{0,1\}$ at an earlier time $t_{\text{past}}$. A future observer at time $t_{\text{now}}$ holds an **intention state** $|\mathcal{I}\rangle$ – e.g., “I intend that the recorded value is 1”. The probability that the record actually contains $x$ given the future intention is:
 
 $$
-P(x \mid \mathcal{I}) \;=\;
+P(x \mid \mathcal{I}) = 
 \frac{\bigl|\langle x|\,e^{-iH_{\text{tot}}\Delta t/\hbar}\,|\mathcal{I}\rangle\bigr|^2}
      {\sum_{x'=0,1}\bigl|\langle x'|\,e^{-iH_{\text{tot}}\Delta t/\hbar}\,|\mathcal{I}\rangle\bigr|^2},
 \qquad \Delta t = t_{\text{now}} - t_{\text{past}} > 0 .
@@ -31,10 +30,9 @@ The total Hamiltonian $H_{\text{tot}}$ includes a cross‑time coupling between 
 ## 3. Hamiltonian with cross‑time consciousness coupling
 
 $$
-H_{\text{tot}} \=\ H_{\text{sys}} \+\ H_{\text{con}}^{(A)} \+\ H_{\text{con}}^{(B)}
-\+\ \lambda_0\
-\sqrt{\frac{N_A}{N_{\text{ref}}}\,\frac{N_B}{N_{\text{ref}}}}\
-\hat{O}\otimes\Pi_{\mathcal{I}}
+H_{\text{tot}} = H_{\text{sys}} + H_{\text{con}}^{(A)} + H_{\text{con}}^{(B)}
++ \lambda_0 \sqrt{\frac{N_A}{N_{\text{ref}}}\,\frac{N_B}{N_{\text{ref}}}}
+\; \hat{O} \otimes \Pi_{\mathcal{I}}
 $$
 
 where
@@ -62,7 +60,7 @@ $$
 Define the **coupling angle**
 
 $$
-\theta \;=\; \frac{\lambda_0}{\hbar}\,
+\theta = \frac{\lambda_0}{\hbar}\,
 \sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\; \Delta t .
 $$
 
@@ -84,17 +82,29 @@ The probability that the past record matches the future intention as a function 
 
 The following ASCII schematic illustrates the retrocausal coupling from a future intention to a past record:
 
+Past (record created)                Future (intention set)
+          │                                     │
+          ▼                                     ▼
+     ┌─────────┐                         ┌─────────┐
+     │  0 or 1   │ ◄──── retrocausal ────│  INTENT  │
+     │  (bit)    │        coupling        │  to 1    │
+     └─────────┘                         └─────────┘
+          │                                     │
+          └────────────── time ────────────────►┘
+                     Δt = t_now – t_past > 0
+
+
 ## 6. Observable signature
 
 For small coupling ($\theta \ll 1$), $\cos^2\theta \approx 1 - \theta^2 > 0.5$. Therefore a statistically significant deviation from $50\%$ in a binary choice experiment (e.g., quantum random bit generation followed by human intention) is the hallmark of a genuine retrocausal effect. The predicted match rate is
 
 $$
 P_{\text{match}} = \frac12 + \frac12\cos(2\theta) \quad\Longrightarrow\quad
-P_{\text{match}} > \frac12 \\\text{for}\\ \theta \neq 0 .
+P_{\text{match}} > \frac12 \;\;\text{for}\;\; \theta \neq 0 .
 $$
 
 > **Typical numbers (laboratory scale):**  
-> $\lambda_0 \approx 1.0\times10^{-34}\,\text{J·s},\; N_A\approx N_B\approx 10^{11},\ N_{\text{ref}}=10^{11},\ \Delta t\approx 1\ \text{s}$.  
+> $\lambda_0 \approx 1.0\times10^{-34}\,\text{J·s},\; N_A\approx N_B\approx 10^{11},\; N_{\text{ref}}=10^{11},\; \Delta t\approx 1\ \text{s}$.  
 > Then $\theta \approx 0.95\ \text{rad}$ and $P_{\text{match}} \approx 0.51$. With $10\,000$ trials, the expected excess matches $\approx 100$, $z \approx 2.0$, $p \approx 0.045$.
 
 ## 7. Notation summary
@@ -113,4 +123,3 @@ $$
 ---
 
 *This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.*
-
