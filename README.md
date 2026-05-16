@@ -83,14 +83,14 @@ The probability that the past record matches the future intention as a function 
 The following ASCII schematic illustrates the retrocausal coupling from a future intention to a past record:
 
 Past (record created)                Future (intention set)
+
           │                                     │
-          
      ┌─────────┐                         ┌─────────┐
-     │  0 or 1   │ ◄──── retrocausal ────│  INTENT  │
-     │  (bit)    │        coupling        │  to 1    │
+     │  0 or 1   │ ◄──── retrocausal ────│  INTENT   │
+     │  (bit)    │        coupling         │  to 1     │
      └─────────┘                         └─────────┘
           │                                     │
-          └────────────── time ────────────────►┘
+          └────────────── time ───────────►┘
                      Δt = t_now – t_past > 0
 
 
@@ -100,7 +100,7 @@ For small coupling ($\theta \ll 1$), $\cos^2\theta \approx 1 - \theta^2 > 0.5$. 
 
 $$
 P_{\text{match}} = \frac12 + \frac12\cos(2\theta) \quad\Longrightarrow\quad
-P_{\text{match}} > \frac12 \;\;\text{for}\;\; \theta \neq 0 .
+P_{\text{match}} > \frac12 \\\text{for}\\\theta \neq 0 .
 $$
 
 > **Typical numbers (laboratory scale):**  
