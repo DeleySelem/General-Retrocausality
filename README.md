@@ -30,11 +30,9 @@ The total Hamiltonian $H_{\text{tot}}$ includes a cross‑time coupling between 
 
 ## 3. Hamiltonian with cross‑time consciousness coupling
 
-$$
-H_{\text{tot}} = H_{\text{sys}} + H_{\text{con}}^{(A)} + H_{\text{con}}^{(B)}
+$$H_{\text{tot}} = H_{\text{sys}} + H_{\text{con}}^{(A)} + H_{\text{con}}^{(B)}
 + \lambda_0 \sqrt{ \frac{N_A}{N_{\text{ref}}} \frac{N_B}{N_{\text{ref}}} } \,
-\hat{O} \otimes \Pi_{\mathcal{I}}
-$$
+\hat{O} \otimes \Pi_{\mathcal{I}}$$
 
 where
 
