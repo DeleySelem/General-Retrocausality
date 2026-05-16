@@ -84,7 +84,7 @@ The following ASCII schematic illustrates the retrocausal coupling from a future
 
 Past (record created)                Future (intention set)
           │                                     │
-          ▼                                     ▼
+          
      ┌─────────┐                         ┌─────────┐
      │  0 or 1   │ ◄──── retrocausal ────│  INTENT  │
      │  (bit)    │        coupling        │  to 1    │
