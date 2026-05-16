@@ -80,9 +80,18 @@ The probability that the past record matches the future intention as a function 
 
 The following ASCII schematic illustrates the retrocausal coupling from a future intention to a past record:
 
-```
 
-```
+Past (record created)                Future (intention set)
+
+          │                                     │
+          ▼                                     ▼
+     ┌─────────┐                         ┌─────────┐
+     │  0 or 1   │ ◄──── retrocausal ────│  INTENT  │
+     │  (bit)    │        coupling        │  to 1    │
+     └─────────┘                         └─────────┘
+          │                                     │
+          └────────────── time ────────────────►┘
+                     Δt = t_now – t_past > 0
 
 ## 6. Observable signature
 
