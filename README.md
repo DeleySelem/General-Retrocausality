@@ -1,3 +1,4 @@
+
 # Retrocausality in time‑symmetric quantum mechanics
 
 A general mathematical formulation – post‑selection, conscious coupling, and the ABL rule.
@@ -71,7 +72,7 @@ $$
 P_{\text{match}} = P(\text{past}=1\mid\text{future}=1) = \cos^2\theta .
 $$
 
-If the intention is to see 0, the result is identical: $P(\text{past}=0\mid\text{future}=0)=\cos^2\theta$.
+If the intention is to see $0$, the result is identical: $P(\text{past}=0\mid\text{future}=0)=\cos^2\theta$.
 
 ### Probability curve $P_{\text{match}} = \cos^2\theta$
 
@@ -112,3 +113,4 @@ $$
 ---
 
 *This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.*
+
