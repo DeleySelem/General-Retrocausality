@@ -1,4 +1,3 @@
-markdown
 # Retrocausality in time‑symmetric quantum mechanics
 
 A general mathematical formulation – post‑selection, conscious coupling, and the ABL rule.
