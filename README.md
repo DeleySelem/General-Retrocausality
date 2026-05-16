@@ -9,8 +9,8 @@ For a system evolving from an initial state $|\psi(t_0)\rangle$ to a final (post
 
 $$
 P(m \mid \psi,\phi) = 
-\frac{ | \langle\phi(t_f)|U(t_f,t)|m\rangle \langle m|U(t,t_0)|\psi(t_0)\rangle |^2 }
-     { \sum_{m'} | \langle\phi(t_f)|U(t_f,t)|m'\rangle \langle m'|U(t,t_0)|\psi(t_0)\rangle |^2 }
+\frac{ \bigl| \langle\phi(t_f)|U(t_f,t)|m\rangle \langle m|U(t,t_0)|\psi(t_0)\rangle \bigr|^2 }
+     { \sum_{m'} \bigl| \langle\phi(t_f)|U(t_f,t)|m'\rangle \langle m'|U(t,t_0)|\psi(t_0)\rangle \bigr|^2 }
 $$
 
 where $U(t_2,t_1)=e^{-iH(t_2-t_1)/\hbar}$ is the time evolution operator. This rule is **time‑symmetric**: the future condition (post‑selection) influences the probability of past events.
@@ -21,8 +21,8 @@ Consider a two‑state physical record (e.g. a spin, a photon polarization) that
 
 $$
 P(x \mid \mathcal{I}) = 
-\frac{ | \langle x| e^{-iH_{\text{tot}} \Delta t / \hbar} |\mathcal{I}\rangle |^2 }
-     { \sum_{x' \in \{0,1\}} | \langle x'| e^{-iH_{\text{tot}} \Delta t / \hbar} |\mathcal{I}\rangle |^2 },
+\frac{ \bigl| \langle x| e^{-iH_{\text{tot}} \Delta t / \hbar} |\mathcal{I}\rangle \bigr|^2 }
+     { \sum_{x' \in \{0,1\}} \bigl| \langle x'| e^{-iH_{\text{tot}} \Delta t / \hbar} |\mathcal{I}\rangle \bigr|^2 },
 \qquad \Delta t = t_{\text{now}} - t_{\text{past}} > 0 .
 $$
 
@@ -32,7 +32,8 @@ The total Hamiltonian $H_{\text{tot}}$ includes a cross‑time coupling between 
 
 $$
 H_{\text{tot}} = H_{\text{sys}} + H_{\text{con}}^{(A)} + H_{\text{con}}^{(B)}
-+ \lambda_0 \sqrt{ \frac{N_A N_B}{N_{\text{ref}}^2} } \ \hat{O} \otimes \Pi_{\mathcal{I}}
++ \lambda_0 \sqrt{ \frac{N_A}{N_{\text{ref}}} \frac{N_B}{N_{\text{ref}}} } \,
+\hat{O} \otimes \Pi_{\mathcal{I}}
 $$
 
 where
@@ -46,20 +47,20 @@ where
 - $\Pi_{\mathcal{I}} = |\mathcal{I}\rangle\langle\mathcal{I}|$ – projection onto the future intention state
 - $\otimes$ – tensor product (entanglement between record and intention)
 
-> **Note:** The coupling term $\lambda_0 \sqrt{N_A N_B / N_{\text{ref}}^2} \ \hat{O} \otimes \Pi_{\mathcal{I}}$ is *bilocal in time* – it correlates the past record with the future intention, enabling retrocausal influence.
+> **Note:** The coupling term $\lambda_0 \sqrt{ \frac{N_A}{N_{\text{ref}}} \frac{N_B}{N_{\text{ref}}} } \, \hat{O} \otimes \Pi_{\mathcal{I}}$ is *bilocal in time* – it correlates the past record with the future intention, enabling retrocausal influence.
 
 ## 4. Effective two‑state model
 
 For a qubit record with $\hat{O}=\sigma_x$ (bit flip) and the intention fixed to $|1\rangle$ (“I want outcome 1”), the evolution on the past state reduces to a rotation
 
 $$
-e^{-iH_{\text{eff}} \Delta t / \hbar}, \quad H_{\text{eff}} = \lambda_0 \sqrt{ \frac{N_A N_B}{N_{\text{ref}}^2} } \ \sigma_x .
+e^{-iH_{\text{eff}} \Delta t / \hbar}, \quad H_{\text{eff}} = \lambda_0 \sqrt{ \frac{N_A N_B}{N_{\text{ref}}^2} } \, \sigma_x .
 $$
 
 Define the **coupling angle**
 
 $$
-\theta = \frac{\lambda_0}{\hbar} \sqrt{ \frac{N_A N_B}{N_{\text{ref}}^2} } \ \Delta t .
+\theta = \frac{\lambda_0}{\hbar} \sqrt{ \frac{N_A N_B}{N_{\text{ref}}^2} } \, \Delta t .
 $$
 
 The transition amplitude from future state $|1\rangle$ to past state $|1\rangle$ is $\langle 1|e^{-i\theta\sigma_x}|1\rangle = \cos\theta$. Hence the **match probability** becomes
@@ -80,18 +81,9 @@ The probability that the past record matches the future intention as a function 
 
 The following ASCII schematic illustrates the retrocausal coupling from a future intention to a past record:
 
+```
 
-Past (record created)                Future (intention set)
-
-          │                                     │
-          ▼                                     ▼
-     ┌─────────┐                         ┌─────────┐
-     │  0 or 1   │ ◄──── retrocausal ────│  INTENT  │
-     │  (bit)    │        coupling        │  to 1    │
-     └─────────┘                         └─────────┘
-          │                                     │
-          └────────────── time ────────────────►┘
-                     Δt = t_now – t_past > 0
+```
 
 ## 6. Observable signature
 
@@ -122,3 +114,4 @@ $$
 ---
 
 *This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.*
+
