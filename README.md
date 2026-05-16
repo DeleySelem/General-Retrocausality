@@ -54,14 +54,14 @@ For a qubit record with $\hat{O}=\sigma_x$ (bit flip) and the intention fixed to
 
 $$
 e^{-iH_{\text{eff}}\Delta t/\hbar}, \quad H_{\text{eff}} = \lambda_0\,
-\sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\; \sigma_x .
+\sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\ \sigma_x .
 $$
 
 Define the **coupling angle**
 
 $$
 \theta = \frac{\lambda_0}{\hbar}\,
-\sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\; \Delta t .
+\sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\ \Delta t .
 $$
 
 The transition amplitude from future state $|1\rangle$ to past state $|1\rangle$ is $\langle 1|e^{-i\theta\sigma_x}|1\rangle = \cos\theta$. Hence the **match probability** becomes
@@ -104,7 +104,7 @@ P_{\text{match}} > \frac12 \\\text{for}\\\theta \neq 0 .
 $$
 
 > **Typical numbers (laboratory scale):**  
-> $\lambda_0 \approx 1.0\times10^{-34}\,\text{J·s},\; N_A\approx N_B\approx 10^{11},\; N_{\text{ref}}=10^{11},\; \Delta t\approx 1\ \text{s}$.  
+> $\lambda_0 \approx 1.0\times10^{-34}\,\text{J·s},\ N_A\approx N_B\approx 10^{11},\ N_{\text{ref}}=10^{11},\ \Delta t\approx 1\ \text{s}$.  
 > Then $\theta \approx 0.95\ \text{rad}$ and $P_{\text{match}} \approx 0.51$. With $10\,000$ trials, the expected excess matches $\approx 100$, $z \approx 2.0$, $p \approx 0.045$.
 
 ## 7. Notation summary
