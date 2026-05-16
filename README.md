@@ -2,8 +2,6 @@
 
 A general mathematical formulation – post‑selection, conscious coupling, and the ABL rule.
 
-> **Note:** This document uses LaTeX math notation. GitHub renders it automatically. If you see raw `$...$` symbols, refresh the page or ensure you are viewing it on `github.com`.
-
 ## 1. Aharonov–Bergmann–Lebowitz (ABL) rule
 
 For a system evolving from an initial state $|\psi(t_0)\rangle$ to a final (post‑selected) state $|\phi(t_f)\rangle$, the probability to find an intermediate state $|m\rangle$ at time $t$ is:
