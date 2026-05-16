@@ -2,6 +2,8 @@
 
 A general mathematical formulation – post‑selection, conscious coupling, and the ABL rule.
 
+> **Note:** This document uses LaTeX math notation. GitHub renders it automatically. If you see raw `$...$` symbols, refresh the page or ensure you are viewing it on `github.com`.
+
 ## 1. Aharonov–Bergmann–Lebowitz (ABL) rule
 
 For a system evolving from an initial state $|\psi(t_0)\rangle$ to a final (post‑selected) state $|\phi(t_f)\rangle$, the probability to find an intermediate state $|m\rangle$ at time $t$ is:
@@ -75,7 +77,7 @@ If the intention is to see 0, the result is identical: $P(\text{past}=0\mid\text
 
 ### Probability curve $P_{\text{match}} = \cos^2\theta$
 
-The probability that the past record matches the future intention as a function of the coupling angle $\theta$. For $\theta < \pi/4$, the probability exceeds 0.5, indicating a retrocausal bias.
+The probability that the past record matches the future intention as a function of the coupling angle $\theta$. For $\theta < \pi/4$, the probability exceeds $0.5$, indicating a retrocausal bias.
 
 *Example: for $\theta = 0.95$ rad, $P_{\text{match}} = \cos^2(0.95) \approx 0.51$.*
 
@@ -89,7 +91,7 @@ The following ASCII schematic illustrates the retrocausal coupling from a future
 
 ## 6. Observable signature
 
-For small coupling ($\theta \ll 1$), $\cos^2\theta \approx 1 - \theta^2 > 0.5$. Therefore a statistically significant deviation from 50 % in a binary choice experiment (e.g., quantum random bit generation followed by human intention) is the hallmark of a genuine retrocausal effect. The predicted match rate is
+For small coupling ($\theta \ll 1$), $\cos^2\theta \approx 1 - \theta^2 > 0.5$. Therefore a statistically significant deviation from $50\%$ in a binary choice experiment (e.g., quantum random bit generation followed by human intention) is the hallmark of a genuine retrocausal effect. The predicted match rate is
 
 $$
 P_{\text{match}} = \frac12 + \frac12\cos(2\theta) \quad\Longrightarrow\quad
@@ -98,21 +100,21 @@ $$
 
 > **Typical numbers (laboratory scale):**  
 > $\lambda_0 \approx 1.0\times10^{-34}\,\text{J·s},\; N_A\approx N_B\approx 10^{11},\; N_{\text{ref}}=10^{11},\; \Delta t\approx 1\ \text{s}$.  
-> Then $\theta \approx 0.95\ \text{rad}$ and $P_{\text{match}} \approx 0.51$. With 10 000 trials, the expected excess matches ~ 100, $z \approx 2.0$, $p \approx 0.045$.
+> Then $\theta \approx 0.95\ \text{rad}$ and $P_{\text{match}} \approx 0.51$. With $10\,000$ trials, the expected excess matches $\approx 100$, $z \approx 2.0$, $p \approx 0.045$.
 
 ## 7. Notation summary
 
-| Symbol       | Meaning                                      | Typical value                                      |
-|--------------|----------------------------------------------|----------------------------------------------------|
-| $\hbar$      | Reduced Planck constant                     | $1.0546\times10^{-34}\,\text{J·s}$                 |
-| $\lambda_0$  | Retrocausal coupling constant                | $\sim 10^{-34}\,\text{J·s}$ (fitted from RNG experiments) |
-| $N_{\text{con}}$ | Number of conscious atoms in a mind      | $\approx 10^{11}$ (neural assembly)               |
-| $N_{\text{ref}}$ | Reference number of atoms                | $10^{11}$                                          |
-| $\Delta t$   | Time interval (past → future)                | Variable (seconds to years)                        |
-| $\theta$     | Coupling angle                               | $\frac{\lambda_0}{\hbar}\sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\Delta t$ |
-| $\Pi_{\mathcal{I}}$ | Projector onto intention state         | $|\mathcal{I}\rangle\langle\mathcal{I}|$           |
-| $\otimes$    | Tensor product (entanglement)                |                                                    |
+| Symbol | Meaning | Typical value |
+|--------|---------|----------------|
+| $\hbar$ | Reduced Planck constant | $1.0546\times10^{-34}\,\text{J·s}$ |
+| $\lambda_0$ | Retrocausal coupling constant | $\sim 10^{-34}\,\text{J·s}$ (fitted from RNG experiments) |
+| $N_{\text{con}}$ | Number of conscious atoms in a mind | $\approx 10^{11}$ (neural assembly) |
+| $N_{\text{ref}}$ | Reference number of atoms | $10^{11}$ |
+| $\Delta t$ | Time interval (past → future) | Variable (seconds to years) |
+| $\theta$ | Coupling angle | $\frac{\lambda_0}{\hbar}\sqrt{\frac{N_AN_B}{N_{\text{ref}}^2}}\Delta t$ |
+| $\Pi_{\mathcal{I}}$ | Projector onto intention state | $|\mathcal{I}\rangle\langle\mathcal{I}|$ |
+| $\otimes$ | Tensor product (entanglement) | |
 
 ---
 
-*This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.
+*This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.*
