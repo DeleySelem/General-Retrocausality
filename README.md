@@ -1,4 +1,4 @@
-```markdown
+markdown
 # Retrocausality in time‑symmetric quantum mechanics
 
 A general mathematical formulation – post‑selection, conscious coupling, and the ABL rule.
@@ -116,5 +116,4 @@ $$
 
 ---
 
-*This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.*
-```
+*This exposition follows the ABL time‑symmetric formalism extended with a consciousness‑based coupling term. All equations are consistent with the retrocausal interpretation of post‑selected quantum measurements.
